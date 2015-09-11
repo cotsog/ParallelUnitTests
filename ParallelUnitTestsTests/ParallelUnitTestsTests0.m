@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface ParallelUnitTestsTests : XCTestCase
+@interface ParallelUnitTestsTests0 : XCTestCase
 
 @end
 
-@implementation ParallelUnitTestsTests
+@implementation ParallelUnitTestsTests0
 
 - (void)setUp {
     [super setUp];
@@ -25,12 +25,12 @@
     [super tearDown];
 }
 
-- (void)testExample {
+- (void)testExample0 {
     // This is an example of a functional test case.
     XCTAssert(YES, @"Pass");
 }
 
-- (void)testPerformanceExample {
+- (void)testPerformanceExample0 {
     // This is an example of a performance test case.
     [self measureBlock:^{
         // Put the code you want to measure the time of here.

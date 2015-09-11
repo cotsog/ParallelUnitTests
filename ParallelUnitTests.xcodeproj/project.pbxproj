@@ -53,7 +53,7 @@
 		8C3F12741BA347D200B4EABF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C3F12761BA347D200B4EABF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8C3F12791BA347D200B4EABF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		8C3F127F1BA347D200B4EABF /* ParallelUnitTestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParallelUnitTestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C3F127F1BA347D200B4EABF /* ParallelUnitTestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ParallelUnitTestsTests.xctest; path = ParallelUnitTestsTests0.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C3F12841BA347D200B4EABF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C3F12851BA347D200B4EABF /* ParallelUnitTestsTests0.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParallelUnitTestsTests0.m; sourceTree = "<group>"; };
 		8C3F128F1BA3482100B4EABF /* ParallelUnitTestsTests1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParallelUnitTestsTests1.m; sourceTree = "<group>"; };
@@ -291,9 +291,11 @@
 					};
 					8C3F12961BA348CA00B4EABF = {
 						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 8C3F12651BA347D200B4EABF;
 					};
 					8C3F12A31BA348DD00B4EABF = {
 						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 8C3F12651BA347D200B4EABF;
 					};
 				};
 			};
@@ -566,6 +568,7 @@
 		8C3F129E1BA348CA00B4EABF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -577,12 +580,14 @@
 				INFOPLIST_FILE = ParallelUnitTestsTests1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParallelUnitTests.app/ParallelUnitTests";
 			};
 			name = Debug;
 		};
 		8C3F129F1BA348CA00B4EABF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -590,12 +595,14 @@
 				INFOPLIST_FILE = ParallelUnitTestsTests1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParallelUnitTests.app/ParallelUnitTests";
 			};
 			name = Release;
 		};
 		8C3F12AB1BA348DD00B4EABF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -607,12 +614,14 @@
 				INFOPLIST_FILE = ParallelUnitTestsTests2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParallelUnitTests.app/ParallelUnitTests";
 			};
 			name = Debug;
 		};
 		8C3F12AC1BA348DD00B4EABF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -620,6 +629,7 @@
 				INFOPLIST_FILE = ParallelUnitTestsTests2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParallelUnitTests.app/ParallelUnitTests";
 			};
 			name = Release;
 		};
@@ -642,6 +652,7 @@
 				8C3F128B1BA347D200B4EABF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C3F128C1BA347D200B4EABF /* Build configuration list for PBXNativeTarget "ParallelUnitTestsTests0" */ = {
 			isa = XCConfigurationList;
@@ -650,6 +661,7 @@
 				8C3F128E1BA347D200B4EABF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C3F129D1BA348CA00B4EABF /* Build configuration list for PBXNativeTarget "ParallelUnitTestsTests1" */ = {
 			isa = XCConfigurationList;
@@ -658,6 +670,7 @@
 				8C3F129F1BA348CA00B4EABF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C3F12AA1BA348DD00B4EABF /* Build configuration list for PBXNativeTarget "ParallelUnitTestsTests2" */ = {
 			isa = XCConfigurationList;
@@ -666,6 +679,7 @@
 				8C3F12AC1BA348DD00B4EABF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
