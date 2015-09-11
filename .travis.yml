@@ -1,1 +1,7 @@
 language: objective-c
+osx_image: xcode7
+xcode_project: ParallelUnitTests.xcodeproj
+xcode_scheme:
+  - ParallelUnitTestsTests0
+  - ParallelUnitTestsTests1
+  - ParallelUnitTestsTests2
